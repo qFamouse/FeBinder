@@ -19,7 +19,7 @@ namespace FeBinder {
     /// </summary>
     public partial class MainWindow : Window {
         public MainWindow() {
-            InitializeComponent(); // Hello World
+            InitializeComponent();
         }
     }
 }
