@@ -18,8 +18,8 @@ namespace FeBinder {
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window {
-        public MainWindow() { // test comment
-            InitializeComponent();
+        public MainWindow() {
+            InitializeComponent(); // Hello World
         }
     }
 }
