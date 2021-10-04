@@ -87,10 +87,10 @@
                        TextAlignment="Center"
                        Foreground="#00a8e0"
 
-                       FontFamily="Comic Sans MS"
-                       FontSize="40"
+                       FontFamily="/FeBinder;component/fonts/#Carter One"
+                       FontSize="65"
 
-                       Margin="0 20 0 0"/>
+                       Margin="0 0 0 0"/>
         </Grid>
         <!--LogInfo-->
         <Grid Name="LogInfo" Grid.Row="2">
