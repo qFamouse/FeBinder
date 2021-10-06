@@ -26,5 +26,10 @@ namespace FeBinder {
         {
             System.Windows.Application.Current.Shutdown();
         }
+
+        private void MinimizedButton_Click(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
     }
 }

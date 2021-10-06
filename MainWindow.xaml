@@ -38,7 +38,9 @@
                         Foreground="Gray"
                         BorderThickness="0"
                         Background="Transparent"
-                        FontWeight="Bold">
+                        FontWeight="Bold"
+                        Name="MinimizedButton"
+                        Click="MinimizedButton_Click">
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
                             <Border Name="Minimize">
@@ -62,7 +64,7 @@
                         BorderThickness="0"
                         Background="Transparent"
                         FontWeight="Bold"
-                        Name="ExitButton" 
+                        Name="ExitButton"
                         Click="ExitButton_Click">
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
