@@ -24,7 +24,7 @@ namespace FeBinder {
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
-            System.Windows.Application.Current.Shutdown();
+            Application.Current.Shutdown();
         }
 
         private void MinimizedButton_Click(object sender, RoutedEventArgs e)
