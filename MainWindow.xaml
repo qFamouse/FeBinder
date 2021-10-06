@@ -18,6 +18,7 @@
 
         WindowStyle="None"
         ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
         Title="MainWindow" Height="515" Width="365">
 
 
