@@ -44,14 +44,14 @@
                         Click="MinimizedButton_Click">
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
-                            <Border Name="Minimize">
+                            <Border Name="MinimizeSymbol">
                                 <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"
                                                   Content="{TemplateBinding Content}" />
                             </Border>
                             <ControlTemplate.Triggers >
                                 <Trigger Property="Button.IsMouseOver" Value="True">
-                                    <Setter TargetName="Minimize" Property="Background" Value="#393939"/>
-                                    <Setter TargetName="Minimize" Property="TextBlock.Foreground" Value="White"/>
+                                    <Setter TargetName="MinimizeSymbol" Property="Background" Value="#393939"/>
+                                    <Setter TargetName="MinimizeSymbol" Property="TextBlock.Foreground" Value="White"/>
                                 </Trigger>
                             </ControlTemplate.Triggers>
                         </ControlTemplate>
