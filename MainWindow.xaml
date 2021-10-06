@@ -34,7 +34,7 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 <!--_-->
                 <Button Content="_"
-                        Width="20" Height="20"
+                        Width="25" Height="25"
                         FontSize="16"
                         Foreground="Gray"
                         BorderThickness="0"
