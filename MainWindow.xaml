@@ -61,17 +61,19 @@
                         Foreground="Gray"
                         BorderThickness="0"
                         Background="Transparent"
-                        FontWeight="Bold">
+                        FontWeight="Bold"
+                        Name="ExitButton" 
+                        Click="ExitButton_Click">
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
-                            <Border Name="Exit">
+                            <Border Name="ExitSymbol">
                                 <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"
                                                   Content="{TemplateBinding Content}" />
                             </Border>
                             <ControlTemplate.Triggers >
                                 <Trigger Property="Button.IsMouseOver" Value="True">
-                                    <Setter TargetName="Exit" Property="Background" Value="#ff003e"/>
-                                    <Setter TargetName="Exit" Property="TextBlock.Foreground" Value="White"/>
+                                    <Setter TargetName="ExitSymbol" Property="Background" Value="#ff003e"/>
+                                    <Setter TargetName="ExitSymbol" Property="TextBlock.Foreground" Value="White"/>
                                 </Trigger>
                             </ControlTemplate.Triggers>
                         </ControlTemplate>
