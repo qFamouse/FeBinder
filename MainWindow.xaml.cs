@@ -31,5 +31,13 @@ namespace FeBinder {
         {
             WindowState = WindowState.Minimized;
         }
+
+        private void DragMove_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                DragMove();
+            }
+        }
     }
 }
