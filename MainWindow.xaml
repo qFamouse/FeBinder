@@ -118,7 +118,7 @@
                 />
             </StackPanel>
         </Grid>
-        <!--Form--> 
+        <!--Form-->
         <Grid Name="Form" Grid.Row="3">
             <StackPanel Margin="20 0">
                 <TextBox materialDesign:HintAssist.Hint="Username"
@@ -129,7 +129,15 @@
                          BorderBrush="Gray"
                          CaretBrush="White"
 
-                         FontSize="20"/>
+                         Padding="16 16 48 16"
+                         FontSize="20">
+                    <TextBox.Background>
+                        <ImageBrush ImageSource="Images/Icons/account.png"
+                                    AlignmentX="Right"
+                                    AlignmentY="Center"
+                                    Stretch="None"/>
+                    </TextBox.Background>
+                </TextBox>
                 <PasswordBox materialDesign:HintAssist.Hint="Password"
                              Style="{StaticResource MaterialDesignOutlinedPasswordBox}"
                              materialDesign:HintAssist.Background="#171717"
@@ -140,7 +148,20 @@
 
                              FontSize="20"
 
-                             Margin="0 15 0 0"/>
+                             Padding="16 16 48 16"
+                             Margin="0 15 0 0">
+                    <PasswordBox.Background>
+                        <ImageBrush ImageSource="Images/Icons/form-textbox-password.png"
+                                    AlignmentX="Right"
+                                    AlignmentY="Center" Stretch="None">
+                            <ImageBrush.RelativeTransform>
+                                <TransformGroup>
+                                    <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="0.99"/>
+                                </TransformGroup>
+                            </ImageBrush.RelativeTransform>
+                        </ImageBrush>
+                    </PasswordBox.Background>
+                </PasswordBox>
                 <Button Content="Log in"
                         Style="{StaticResource MaterialDesignFlatDarkBgButton}"
                         Background="#00a9e0"
