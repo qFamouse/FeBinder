@@ -22,7 +22,8 @@ namespace FeBinder.Authentication.ValueConverter
             {
                 case AuthenticationPage.Login:
                     return new LoginPage();
-
+                case AuthenticationPage.Register:
+                    return new RegisterPage();
                 default:
                     Debugger.Break();
                     return null;
