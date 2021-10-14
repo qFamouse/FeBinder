@@ -3,14 +3,11 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:FeBinder.Authentication.Pages"
-      xmlns:authVM="clr-namespace:FeBinder.Authentication.ViewModel"
       
       mc:Ignorable="d" 
       d:DesignHeight="515" d:DesignWidth="365"
       Title="LoginPage"
-      
-      
+
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       TextElement.Foreground="{DynamicResource MaterialDesignBody}"
       TextElement.FontWeight="Regular"
@@ -19,13 +16,14 @@
       TextOptions.TextRenderingMode="Auto"
       Background="{DynamicResource MaterialDesignPaper}"
       FontFamily="{DynamicResource MaterialDesignFont}">
+
     <Grid Background="#171717">
         <Grid.RowDefinitions>
             <RowDefinition Height="80"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <!--LogInfo-->
-        <Grid Name="LogInfo" Grid.Row="0">
+        <Grid Grid.Row="0">
             <StackPanel>
                 <TextBlock Text="Don't have an account?"
                            TextAlignment="Center"
@@ -46,7 +44,7 @@
             </StackPanel>
         </Grid>
         <!--Form-->
-        <Grid Name="Form" Grid.Row="1">
+        <Grid Grid.Row="1">
             <StackPanel Margin="20 0">
                 <TextBox materialDesign:HintAssist.Hint="Username"
                          Style="{StaticResource MaterialDesignOutlinedTextBox}"
