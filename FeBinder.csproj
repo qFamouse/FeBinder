@@ -86,8 +86,6 @@
     <Compile Include="Authentication\Pages\RegisterPage.xaml.cs">
       <DependentUpon>RegisterPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Authentication\ValueConverter\AuthenticationPageValueConverter.cs" />
-    <Compile Include="Authentication\ValueConverter\Base\BaseValueConverter.cs" />
     <Compile Include="Authentication\ViewModel\Base\BaseViewModel.cs" />
     <Compile Include="Authentication\ViewModel\MainViewModel.cs" />
     <Compile Include="MainWindow.xaml.cs">
