@@ -109,7 +109,7 @@
         </Grid>
         <!--Page-->
         <Grid Grid.Row="2">
-            <Frame x:Name="MainFrame" Content="{Binding CurrentPage, Converter={authConv:AuthenticationPageValueConverter}}"></Frame>
+            <UserControl></UserControl>
         </Grid>
     </Grid>
 
