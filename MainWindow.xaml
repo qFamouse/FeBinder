@@ -4,9 +4,6 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FeBinder"
-        xmlns:auth="clr-namespace:FeBinder.Authentication"
-        xmlns:authVM="clr-namespace:FeBinder.Authentication.ViewModel"
-        xmlns:authConv="clr-namespace:FeBinder.Authentication.ValueConverter"
         mc:Ignorable="d"
 
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
@@ -101,7 +98,7 @@
         </Grid>
         <!--Page-->
         <Grid Grid.Row="2">
-            <UserControl></UserControl>
+
         </Grid>
     </Grid>
 
