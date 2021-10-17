@@ -98,7 +98,7 @@
         </Grid>
         <!--Page-->
         <Grid Grid.Row="2">
-
+            <UserControl Content="{Binding CurrentControl}"/>
         </Grid>
     </Grid>
 
