@@ -21,6 +21,8 @@ namespace FeBinder {
     public partial class MainWindow : Window {
         public MainWindow() {
             InitializeComponent();
+
+            DataContext = new MainViewModel();
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
