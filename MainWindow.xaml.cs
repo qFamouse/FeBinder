@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using FeBinder.Authentication.ViewModel;
+using FeBinder.ViewModel.Authentication;
 
 namespace FeBinder {
     /// <summary>
@@ -21,6 +22,8 @@ namespace FeBinder {
     public partial class MainWindow : Window {
         public MainWindow() {
             InitializeComponent();
+
+            DataContext = new MainViewModel();
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
