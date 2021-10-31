@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using FeBinder.Entities;
+using FeBinder.Repositories;
 
 namespace FeBinder.Controls.Authentication
 {
@@ -20,9 +22,23 @@ namespace FeBinder.Controls.Authentication
     /// </summary>
     public partial class RegisterControl : UserControl
     {
+        private BinderContext _dbContext;
+
         public RegisterControl()
         {
             InitializeComponent();
+
+            _dbContext = new BinderContext();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string login = TextBoxLogin.Text.Trim();
+            string password = PasswordBox.Password.Trim();
+            string password_2 = PasswordBoxConfirm.Password.Trim();
+
+            _dbContext.Users.Add(new User {login = login, password = password});
+            _dbContext.SaveChanges();
         }
     }
 }

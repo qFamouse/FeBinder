@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using FeBinder.Authentication.ViewModel.Base;
 using FeBinder.Controls.Authentication;
+using FeBinder.Repositories;
 using FeBinder.ViewModel.Base;
 
 namespace FeBinder.ViewModel.Authentication
 {
     class MainViewModel : BaseViewModel
     {
+        private BinderContext _binderContext;
         /// <summary>
         /// Link to exits control for display
         /// </summary>
@@ -73,6 +75,8 @@ namespace FeBinder.ViewModel.Authentication
             _registerControl = new RegisterControl();
 
             _currentControl = _loginControl;
+
+            _binderContext = new BinderContext();
         }
     }
 }

@@ -43,7 +43,8 @@
         <!--Form-->
         <Grid Grid.Row="1">
             <StackPanel Margin="20 0">
-                <TextBox materialDesign:HintAssist.Hint="Desired Username"
+                <TextBox Name="TextBoxLogin"
+                         materialDesign:HintAssist.Hint="Desired Login"
                          Style="{StaticResource MaterialDesignOutlinedTextBox}"
                          materialDesign:HintAssist.Background="#171717"
                          materialDesign:HintAssist.Foreground="#999999"
@@ -60,7 +61,8 @@
                                     Stretch="None"/>
                     </TextBox.Background>
                 </TextBox>
-                <PasswordBox materialDesign:HintAssist.Hint="Password"
+                <PasswordBox Name="PasswordBox"
+                             materialDesign:HintAssist.Hint="Password"
                              Style="{StaticResource MaterialDesignOutlinedPasswordBox}"
                              materialDesign:HintAssist.Background="#171717"
                              materialDesign:HintAssist.Foreground="#999999"
@@ -84,7 +86,8 @@
                         </ImageBrush>
                     </PasswordBox.Background>
                 </PasswordBox>
-                <PasswordBox materialDesign:HintAssist.Hint="Confirm Password"
+                <PasswordBox Name="PasswordBoxConfirm"
+                             materialDesign:HintAssist.Hint="Confirm Password"
                              Style="{StaticResource MaterialDesignOutlinedPasswordBox}"
                              materialDesign:HintAssist.Background="#171717"
                              materialDesign:HintAssist.Foreground="#999999"
@@ -116,7 +119,7 @@
 
                         FontSize="20"
 
-                        Margin="0 15 0 0"/>
+                        Margin="0 15 0 0" Click="Button_Click"/>
             </StackPanel>
         </Grid>
     </Grid>
